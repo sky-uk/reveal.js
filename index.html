@@ -7,44 +7,21 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/skytheme.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				
+				<section data-background="//trainingdesign.bskyb.com/assets/westworld.jpg"><img src="img/logo.png" alt=""><h1 class="spectrum">Slide 1</h1></section>
+				<section data-background-video="//static.video.sky.com/todayatsky/2016/09/208605/208605-576p_2000K_H264.mp4"><h1 class="spectrum">Video Slide</h1></section>
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
+        	Reveal.initialize();
+    	</script>
 	</body>
 </html>
